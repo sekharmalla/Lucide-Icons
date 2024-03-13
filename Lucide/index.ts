@@ -31,7 +31,12 @@ export class Lucide implements ComponentFramework.StandardControl<IInputs, IOutp
         const color = context.parameters.color.raw || 'currentColor';
         const size = context.parameters.size.raw || 24
 
-        this._reactRoot.render(React.createElement(Icon, {iconName, color, size}))
+        this._reactRoot.render(React.createElement(Icon, {
+            iconName,
+            color,
+            size,
+            context: context
+        }))
     }
 
    
