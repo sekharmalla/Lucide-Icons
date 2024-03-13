@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="damcosolutions" constructor="Lucide" version="0.0.1" display-name-key="Lucide" description-key="Lucide description" control-type="standard" >
+    
+    <external-service-usage enabled="false">
+     
+    </external-service-usage>
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="iconName" display-name-key="iconName" description-key="iconName" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="color" display-name-key="color" description-key="color" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="size" display-name-key="size" description-key="size" of-type="Whole.None" usage="bound" required="true" />
+    
+    <resources>
+      <code path="index.ts" order="1"/>
+      
+    </resources>
+  </control>
+</manifest>
